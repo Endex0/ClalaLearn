@@ -24,7 +24,7 @@
 }
 
 
-/*body*/
+/* body */
 *, body, html {
   margin: 0;
   padding: 0; 
@@ -35,4 +35,24 @@ body {
   font-weight: "semi-bold";
   background-color: rgb(34, 34, 37);
   color:white;
+}
+
+/* nav */
+.nav {
+  margin: 0 auto;
+  width: 1300px;
+  height: 30px;
+  padding: 10px;
+}
+
+.nav-title {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 25px;
+  width: 140px;
+}
+
+.nav-list {
+  width: 100px;
+  height: 30px;
 }
