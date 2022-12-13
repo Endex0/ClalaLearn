@@ -17,16 +17,25 @@ body {
 .nav {
   margin: 0 auto;
   width: 1300px;
-  height: 30px;
+  height: auto;
   padding: 10px;
-  display: inline-block;
+}
+
+.nav-flex {
+  display: flex;
 }
 
 .nav-title {
   font-family: "Inter";
   font-weight: bold;
   font-size: 25px;
-  width: 150px;
+  width: auto;
+}
+
+.nav-list-flex {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 a:link {
