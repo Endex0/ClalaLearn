@@ -3,7 +3,7 @@
 /* body */
 *, body, html {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body {
@@ -16,13 +16,16 @@ body {
 /* nav */
 .nav {
   margin: 0 auto;
-  width: 1300px;
+  width: 1200px;
   height: auto;
   padding: 10px;
 }
 
 .nav-flex {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-title {
@@ -38,6 +41,16 @@ body {
   justify-content: right;
 }
 
+.nav-list-item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-list-item-end {
+  margin-left: 10px;
+}
+
 a:link {
   color: whitesmoke;
+  text-decoration: none;
 }
