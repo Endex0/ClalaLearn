@@ -23,11 +23,12 @@ body {
 
 .nav-item {
   margin: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .nav-item:nth-of-type(1) {
-  margin-left: 2%;
+  margin-left: 3%;
+  font-weight: bold;
 }
 
 .nav-item:nth-of-type(2) {
@@ -35,10 +36,26 @@ body {
 }
 
 .nav-item:nth-of-type(4) {
-  margin-right: 2%;
+  margin-right: 3%;
 }
+
+/* Main Body */
+.main-body {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.body-item:nth-of-type(1) {
+  margin-top: 200px;
+  font-size: 200%;
+  width: auto;
+  font-weight: bold;
+}
+
+/* Other Formatting */
 
 a:link {
   color: whitesmoke;
   text-decoration: none;
 }
+
