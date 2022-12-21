@@ -72,6 +72,11 @@ body {
 }
 
 .body-item:nth-of-type(3) {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.body-item:nth-of-type(4) {
   display: flex;
   float: right;
 }
