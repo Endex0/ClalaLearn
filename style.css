@@ -92,6 +92,17 @@ body {
   width: 40rem
 }
 
+/* Footer */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:	#373737;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+}
+
 /* Other Formatting */
 
 a:link {
