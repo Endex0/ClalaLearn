@@ -45,40 +45,51 @@ body {
 
 /* Main Body */
 .main-body {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 15%;
+  padding-left: 15%;
   display: flex;
   justify-content: space-between;
 }
 
-.body-text {
-  margin-left: 3rem;
+.body-group-1 {
   display: flex;
   flex-direction: column;
 }
 
-.body-item:nth-of-type(1) {
+.main-body-text {
   margin-top: 18rem;
   font-size: 2.8rem;
   width: auto;
   font-weight: 700;
 }
 
-.body-item:nth-of-type(2) {
+.secondary-body-text {
   margin-top: 0.5rem;
   font-size: 1rem;
   width: auto;
   font-weight: 500;
 }
 
-.body-item:nth-of-type(3) {
+.sign-in-buttons-box {
   margin-top: 1rem;
   display: flex;
 }
 
-.body-item:nth-of-type(4) {
+.landing-button {
+  height: 2.5rem;
+}
+
+.landing-button:nth-of-type(1) {
+  margin-right: 1rem
+}
+
+.body-cards-image-flex {
   display: flex;
   float: right;
+}
+
+.body-cards-image-style {
+  width: 40rem
 }
 
 /* Other Formatting */
