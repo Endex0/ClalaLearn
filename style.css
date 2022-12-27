@@ -118,3 +118,74 @@ a:link {
   color: whitesmoke;
   text-decoration: none;
 }
+
+/* Login page */
+
+.login{
+  border-radius: 10px;
+  margin: auto;
+  inset: 0;
+  position: absolute;
+  width: fit-content;
+  padding: 20px;
+  box-shadow: 0 0 10px #4c4b4b;
+  height: 50%;
+}
+
+.sublogin{
+  display: flex;
+  margin-top: 30px;
+}
+
+.logintitle{
+  font-size: 24px;
+  margin: 0 auto 0 auto;
+  width: fit-content;
+}
+
+.login input{
+  padding: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+}
+
+.login input:focus{
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+.email{
+  width: calc(50% - 10px);
+}
+
+.loginbuttons{
+  width: calc(50% - 10px);
+}
+
+.signinbutton{
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.createaccountbutton{
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.forgotpasswordbutton{
+  color: var(--accent-color);
+}
+
+.forgotpasswordbutton:hover{
+  color: #cea76d;
+  cursor: pointer;
+}
