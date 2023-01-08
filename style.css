@@ -5,13 +5,21 @@
 *, body, html {
   margin: 0;
   padding: 0;
+  --primary-color: #f0f0f0;
+  --secondary-color: #e3e3e3;
+  --tertiary-color: #ffffff;
+  --font-color: #636363;
+  --accent-color: #e0af64;
+  scroll-behavior: smooth;
+  font-family: "Inter";
 }
 
 body {
-  font-family: "Inter";
   font-weight: 500;
-  background-color: rgb(34, 34, 37);
-  color:white;
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navigation Bar */
@@ -28,9 +36,12 @@ body {
   font-size: 1rem;
 }
 
+.nav-item a:hover{
+  color: var(--font-color);
+}
+
 .nav-item:nth-of-type(1) {
   margin-left: 4%;
-  font-family: "Inter";
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -80,12 +91,16 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: "Inter";
   border: none;
   padding: 0px 4% 0px 4%;
   border-radius: 20px;
   height: 2.5rem;
   transition: all 100ms ease-in-out;
+  background-color: var(--secondary-color);
+}
+
+.landing-button:hover{
+  background-color: lightgray;
 }
 
 .landing-button:nth-of-type(2) {
@@ -102,22 +117,39 @@ body {
 }
 
 /* Footer */
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:	#373737;
-  color: white;
-  text-align: center;
-  margin-top: 5rem;
-  position: absolute 1rem;
+.footer{
+  background-color: var(--secondary-color);
+  padding: 50px 0 50px 0;
 }
 
-/* Other Formatting */
+.subfooterwrapper{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+}
 
-a:link {
-  color: whitesmoke;
+.subfooter{
+  margin: 0 40px 0 40px;
+}
+
+.subfooteritem{
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.socialmedia{
+  margin: 0 1em 0 0;
+}
+
+.footer a, svg{
   text-decoration: none;
+  color: black;
+  fill: black;
+}
+
+.footer a:hover, .socialmedia svg:hover{
+  color: var(--font-color);
+  fill: var(--font-color);
 }
 
 /* Login page */
@@ -126,11 +158,10 @@ a:link {
   border-radius: 20px;
   margin: auto;
   inset: 0;
-  width: fit-content;
-  padding: 20px;
-  box-shadow: 0 0 5px #4c4b4b;
-  margin-top: 130px;
-  margin-bottom: 30rem;
+  padding: 40px;
+  width: 30%;
+  text-align: center;
+  border: 2px solid var(--font-color);
 }
 
 .sublogin{
@@ -152,19 +183,13 @@ a:link {
   border-right: none;
   border-bottom: 2px solid black;
   margin-bottom: 15px;
-  border-radius: 4px;
   padding: 10px;
-  padding-right: 100%;
-  font-family: "Inter";
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
+  background-color: transparent;
 }
 
 .login input:focus {
   outline: none;
-}
-
-.email {
-  width: calc(50% - 10px);
 }
 
 .loginbuttonstyle {
@@ -172,16 +197,21 @@ a:link {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  font-family: "Inter";
   border: none;
-  padding: 0px 25% 0px 25%;
+  padding: auto;
   border-radius: 20px;
   height: 2.5rem;
   transition: all 100ms ease-in-out;
+  width: 40%;
+  background-color: var(--secondary-color);
+}
+
+.loginbuttonstyle:hover{
+  background-color: lightgray;
 }
 
 .loginbottombutton {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
@@ -196,7 +226,22 @@ a:link {
   color: var(--accent-color);
 }
 
+.loginbuttons{
+  width: max-content;
+}
+
+.subloginbuttons{
+  margin: 20px 0 0 0;
+}
+
+/* Other Formatting */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .hoverproperty:hover{
-  color: #cea76d;
+  color: var(--font-color);
   cursor: pointer;
 }
